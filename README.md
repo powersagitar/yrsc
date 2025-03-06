@@ -11,7 +11,8 @@ icons to enhance user experience.
 
 ## How to Run
 
-To run the project locally, install `bun` and `nodejs`, then change into project root and run
+To run the project locally, install `bun` and `nodejs`, then change into project
+root and run
 
 ```zsh
 bun install
