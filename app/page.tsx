@@ -2,7 +2,7 @@
 
 import WeatherGrid from "@/components/weather-grid";
 import { WeatherJson } from "@/lib/weather";
-import { H1 } from "@/typography";
+import { H1 } from "@/components/ui/typography";
 import { useEffect, useState } from "react";
 
 export default function Home() {

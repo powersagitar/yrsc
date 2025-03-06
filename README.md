@@ -2,7 +2,12 @@
 
 ## Brief
 
-<!--TODO: todo-->
+This Real-Time Weather Monitoring System provides live weather updates with a GUI.
+It reads weather data from a CSV, updates every 5 seconds, and dynamically displays
+weather conditions based on a temperature, humidity, wind speed, and wind direction.
+Users can also view a 7-day weather forecast and receive alerts for extreme weather
+conditions. Additionally, the system includes weather descriptions and corresponding
+icons to enhance user experience.
 
 ## How to Run
 
@@ -14,20 +19,16 @@ bun run build
 bun start
 ```
 
-An online version is available at
+An online version is also available at [yrsc.vercel.app](https://yrsc.vercel.app/).
 
 ## File Structure & Explanation
 
-<!--TODO: todo-->
-
-## How to Test
-
-<!--TODO: todo-->
+- `/app` -- the UI
+- `/components/` -- shareable UI components
+- `/lib` -- core logic that's not UI
+- `/public` -- static files served over HTTP
+- `/resources` -- required resources, the weather data CSV in this case
 
 ## Features & Functionality
 
-<!--TODO: todo-->
-
-## Known Issues
-
-<!--TODO: todo-->
+- Displays and updates weather data every 5 seconds, retrieved from a data CSV
