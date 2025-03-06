@@ -63,7 +63,6 @@ export abstract class Weather {
   private humidity: number;
   protected abstract state: WeatherState;
   protected abstract description: string;
-  protected abstract icon: React.ReactNode;
 
   protected constructor({
     date,
@@ -176,7 +175,6 @@ export abstract class Weather {
 class WeatherSunny extends Weather {
   protected state: WeatherState = "Sunny";
   protected description = "Clear skies, bright weather";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -186,7 +184,6 @@ class WeatherSunny extends Weather {
 class WeatherRainy extends Weather {
   protected state: WeatherState = "Rainy";
   protected description = "Overcast skies with precipitation";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -196,7 +193,6 @@ class WeatherRainy extends Weather {
 class WeatherSnowy extends Weather {
   protected state: WeatherState = "Snowy";
   protected description = "Snowfall and cold temperatures";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -206,7 +202,6 @@ class WeatherSnowy extends Weather {
 class WeatherWindy extends Weather {
   protected state: WeatherState = "Windy";
   protected description = "Strong wind without storms";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -216,7 +211,6 @@ class WeatherWindy extends Weather {
 class WeatherStormy extends Weather {
   protected state: WeatherState = "Stormy";
   protected description = "Thunderstorms and heavy rain";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -226,7 +220,6 @@ class WeatherStormy extends Weather {
 class WeatherSevereWindstorm extends Weather {
   protected state: WeatherState = "SevereWindstorm";
   protected description = "Violent wind conditions";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -236,7 +229,6 @@ class WeatherSevereWindstorm extends Weather {
 class WeatherHurricane extends Weather {
   protected state: WeatherState = "Hurricane";
   protected description = "Extremely high winds and storms";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -246,7 +238,6 @@ class WeatherHurricane extends Weather {
 class WeatherTornado extends Weather {
   protected state: WeatherState = "Tornado";
   protected description = "Destructive swirling winds";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -256,7 +247,6 @@ class WeatherTornado extends Weather {
 class WeatherExtremeHeat extends Weather {
   protected state: WeatherState = "ExtremeHeat";
   protected description = "Scorching hot temperatures";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -266,7 +256,6 @@ class WeatherExtremeHeat extends Weather {
 class WeatherExtremeCold extends Weather {
   protected state: WeatherState = "ExtremeCold";
   protected description = "Freezing and dangerously cold";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
@@ -276,7 +265,6 @@ class WeatherExtremeCold extends Weather {
 class WeatherExtremelyHumid extends Weather {
   protected state: WeatherState = "ExtremelyHumid";
   protected description = "High moisture in the air";
-  protected icon = null;
 
   public constructor(initializer: Readonly<WeatherInitializer>) {
     super(initializer);
