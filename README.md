@@ -33,6 +33,7 @@ An online version is also available at [yrsc.vercel.app](https://yrsc.vercel.app
 ## Features & Functionality
 
 - Displays and updates weather data every 5 seconds, retrieved from a data CSV
+- Program intentionally crashes if given weather doesn't match any criterion.
 
 ## Known Issues
 
