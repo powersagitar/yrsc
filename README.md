@@ -33,3 +33,7 @@ An online version is also available at [yrsc.vercel.app](https://yrsc.vercel.app
 ## Features & Functionality
 
 - Displays and updates weather data every 5 seconds, retrieved from a data CSV
+
+## Known Issues
+
+- Due to complexities introduced by timezones, the date might be shifted by 1 day.
