@@ -6,7 +6,6 @@ type CSVRow = [string, string, string, string, string, string];
 
 export default async function parseWeatherData(): Promise<Weather[]> {
   const path = process.cwd() + "/resources/data.csv";
-  console.log(path);
   const content = await fs.readFile(path);
   const records = parse(content, { bom: true }) as CSVRow[];
 

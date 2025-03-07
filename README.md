@@ -1,5 +1,14 @@
 # YRSC
 
+> [!NOTE]
+> This project is for competing in York Region Skills Challenge 2025, Coding
+> category.
+>
+> Design decisions are made solely to satisfy rubric, thus code is heavily
+> unoptimized.
+>
+> No further maintenance will be received.
+
 ## Brief
 
 This Real-Time Weather Monitoring System provides live weather updates with a GUI.
